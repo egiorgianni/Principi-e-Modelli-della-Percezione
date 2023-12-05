@@ -1,4 +1,5 @@
 # Principi e Modelli della Percezione
+Approfondimento a cura di Edoardo Giorgianni e Kristian Fabbro.
 
 ## Introduzione
 In questo approfondimento introdurremo il sistema uditivo umano, spiegando le sue componenti, per poi giungere alla trasformata di Fourier, applicazione pratica del suono.
