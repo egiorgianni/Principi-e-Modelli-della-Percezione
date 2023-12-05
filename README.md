@@ -19,7 +19,4 @@ Un gioco di leve tra questi ossicini provoca lo spostamento della staffa, che pe
 
 Le componenti principali dell’orecchio interno, che permette di percepire il suono, sono coclea e finestra ovale. Il collegamento tra orecchio medio e interno avviene mediante il collegamento tra staffa e l’interno della coclea.
 
-##
-<div style="text-align:center">
-  <img src="https://github.com/egiorgianni/Principi-e-Modelli-della-Percezione/assets/116444536/b2d7d9b1-243b-4dc1-a27a-553fe5faad6b" alt="Descrizione dell'immagine">
-</div>
+![image](https://github.com/egiorgianni/Principi-e-Modelli-della-Percezione/assets/116444536/c4c2a791-3dc4-4cc2-a589-f2e92d47b88d)
