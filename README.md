@@ -1,6 +1,6 @@
 # Sistema Uditivo e trasformata di _Fourier_
 Approfondimento a cura di Edoardo Giorgianni e Kristian Fabbro.
-
+liudshvisdnbvdi
 Presentazione: inserire link.
 
 ## Introduzione
