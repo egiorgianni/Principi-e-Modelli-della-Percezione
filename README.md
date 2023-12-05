@@ -18,3 +18,6 @@ L'orecchio medio, trasformatore di energia meccanica, contiene tre ossicini:
 Un gioco di leve tra questi ossicini provoca lo spostamento della staffa, che permette di raddoppiare l’energia trasmessa.
 
 Le componenti principali dell’orecchio interno, che permette di percepire il suono, sono coclea e finestra ovale. Il collegamento tra orecchio medio e interno avviene mediante il collegamento tra staffa e l’interno della coclea.
+##
+![image](https://github.com/egiorgianni/Principi-e-Modelli-della-Percezione/assets/116444536/b2d7d9b1-243b-4dc1-a27a-553fe5faad6b)
+##
