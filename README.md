@@ -1,5 +1,5 @@
 # Sistema Uditivo e trasformata di _Fourier_
-Approfondimento a cura di Edoardo Giorgianni e Kristian Fabbro.
+Approfondimento a cura di Edoardo Giorgianni e Kristian Fabbro.\n
 Presentazione: inserire link.
 
 ## Introduzione
