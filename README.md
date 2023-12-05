@@ -23,4 +23,3 @@ Le componenti principali dell’orecchio interno, che permette di percepire il s
 <div style="text-align:center">
   <img src="https://github.com/egiorgianni/Principi-e-Modelli-della-Percezione/assets/116444536/b2d7d9b1-243b-4dc1-a27a-553fe5faad6b" alt="Descrizione dell'immagine">
 </div>
-##
