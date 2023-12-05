@@ -10,6 +10,7 @@ Per rispondere razionalmente agli stimoli prodotti dall’ambiente circostante, 
 L'orecchio esterno, che convoglia il suono verso l’orecchio medio, è formato da:
   - pinna: localizza il suono nello spazio e svolge la funzione di antenna acustica
   - canale uditivo esterno: risonatore bidimensionale; tubo di larghezza costante con pareti ad alta impedenza acustica
+
 L'orecchio medio, trasformatore di energia meccanica, contiene tre ossicini:
   - Martello: è l’ossicino più grande della catena ossiculare e la sua funzione principale è quella di trasmettere all’incudine le vibrazioni che le onde sonore producono sulla membrana del timpano. È composto da cinque parti: la testa, il collo, il manico, il processo anteriore e il processo laterale.
   - Incudine: è un piccolo osso di circa 7 mm che si frappone tra il martello e la staffa, a cui trasmette le vibrazioni prodotte dalle onde sonore. Il corpo dell'incudine ha forma cuboidale ed è leggermente schiacciato in senso trasversale. Dal corpo si distaccano i due rami: quello breve si dirige verso la parete posteriore del cavo del timpano; quello lungo si porta in basso e termina con il processo lenticolare, grazie al quale l’incudine si articola con la staffa
