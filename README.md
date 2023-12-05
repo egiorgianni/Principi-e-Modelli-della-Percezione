@@ -1,5 +1,6 @@
 # Sistema Uditivo e trasformata di _Fourier_
 Approfondimento a cura di Edoardo Giorgianni e Kristian Fabbro.
+Presentazione: inserire link.
 
 ## Introduzione
 In questo approfondimento introdurremo il sistema uditivo umano, spiegando le sue componenti, per poi giungere alla trasformata di Fourier, applicazione pratica del suono.
