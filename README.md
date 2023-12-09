@@ -17,7 +17,7 @@ In questo trattato introdurremo le principali componenti del sistema uditivo uma
 ***
 Per rispondere razionalmente agli stimoli prodotti dall’ambiente circostante, l’uomo utilizza i **cinque sensi**. L'**udito** è uno di questi. L’organo che permette di percepire i suoni è l’**orecchio**, suddiviso in **esterno**, **medio** e **interno**.
 
-![Anatomia dell'orecchio umano](../repository/images/anatomia_orecchio.png)
+![Anatomia dell'orecchio umano](../images/anatomia_orecchio.png)
 
 #### Orecchio esterno
 Il ruolo principale dell'**orecchio esterno** è quello di _convogliare_ il _suono_, attraverso il timpano, verso l’orecchio medio.
@@ -50,7 +50,7 @@ La testa è un _ostacolo per_ la libera _propagazione del suono_ e per questo mo
 - **ITD** (_Interaural Time Difference_); causato dal fatto che le onde sonore devono percorrere una _maggiore distanza_ per raggiungere l’_orecchio più lontano_.
 Per intendere ciò è sufficiente considerare una sorgente e la testa come sferica.
 Come si può notare dalla figura, delle banali considerazioni geometriche permettono di affermare che il raggio per raggiungere l’orecchio più lontano è maggiore
-![Modello Strutturale - Testa](../repository/images/modello_strutturale_testa.png)
+![Modello Strutturale - Testa](../images/modello_strutturale_testa.png)
 
 - **ILD** (_Interaural Level Difference_); esprima la condizione secondo la quale l’_orecchio più lontano_ riceve un _suono_ di _minore_ intensità. L'ILD è fortemente legato alla _frequenza_: a basse frequenze non vi è alcuna differenza, mentre ad alte frequenze diventa particolarmente significativo
 
@@ -65,10 +65,10 @@ La sagoma delle due parti assomiglia a un pupazzo di neve, per questo motivo il 
 - **Riflessioni**: quando si misura la risposta impulsiva all'orecchio destro, si osserva che l'impulso iniziale è seguito da una serie di altri impulsi, il cui ritardo varia in base all'elevazione della sorgente sonora.
 Si può utilizzare la geometria semplificata del _modello snowman_ per calcolare i ritardi dei raggi riflessi, considerando i parametri del modello e la posizione della sorgente sonora.
 Il ritardo tra il suono diretto e il riflesso non varia significativamente se la sorgente si muove su una circonferenza orizzontale, ma varia sensibilmente se si muove verticalmente.
-![Modello Strutturale - Riflessione Sonora](../repository/images/modello_strutturale_riflessioni.png)
+![Modello Strutturale - Riflessione Sonora](../images/modello_strutturale_riflessioni.png)
 
 - **Oscuramento**: man mano che la sorgente si muove verso il basso, le riflessioni scompaiono, dando spazio all'effetto di oscuramento. I raggi che vanno dall'orecchio ai punti di tangenza della parte superiore del torso delimitano il cono di oscuramento.  
-![Modello Strutturale - Effetto di Oscuramento](../repository/images/modello_strutturale_oscuramenti.png)
+![Modello Strutturale - Effetto di Oscuramento](../images/modello_strutturale_oscuramenti.png)
 
 ### Reti neurali
 ***
