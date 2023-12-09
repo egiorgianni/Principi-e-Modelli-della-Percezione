@@ -17,7 +17,7 @@ In questo trattato introdurremo le principali componenti del sistema uditivo uma
 ***
 Per rispondere razionalmente agli stimoli prodotti dall’ambiente circostante, l’uomo utilizza i **cinque sensi**. L'**udito** è uno di questi. L’organo che permette di percepire i suoni è l’**orecchio**, suddiviso in **esterno**, **medio** e **interno**.
 
-![Anatomia dell'orecchio umano](../Principi-e-Modelli-della-Percezione/images/anatomia_orecchio.png)
+![Anatomia dell'orecchio umano](images/anatomia_orecchio.png)
 
 #### Orecchio esterno
 Il ruolo principale dell'**orecchio esterno** è quello di _convogliare_ il _suono_, attraverso il timpano, verso l’orecchio medio.
