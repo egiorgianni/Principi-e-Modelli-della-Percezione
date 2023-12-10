@@ -198,7 +198,7 @@ plt.show()
 
 _Output_:
 ```
-$ python3 step_uno_letturaFile.py 
+$ python step_uno_letturaFile.py 
 
 Shape of Signal: (66150,)
 Signal Datatype: int16
@@ -275,7 +275,7 @@ plt.show()
 
 _Output_:
 ```
-$ python3 step_due_trasformataFourier.py
+$ python step_due_trasformataFourier.py
 
 Shape of the Signal: (66150,)
 Signal Datatype: int16
@@ -327,7 +327,11 @@ plt.title('Audio Signal Generation')
 plt.show()
 ```
 
-_Output_: viene generato il file `segnaleMonotono_generato.wav` e la sua rappresentazione sul grafico.
+_Output_:
+```
+$ python segnaleMonotono.py
+```
+viene generato il file `segnaleMonotono_generato.wav` e la sua rappresentazione sul grafico.
 Nota: ad ogni esecuzione del codice il file generato viene sovrascritto.
 
 ![Segnale Monotono](../repository/code/images/segnaleMonotono.png)
@@ -380,7 +384,7 @@ plt.show()
 
 _Output_:
 ```
-$ python3 step_tre_MFCC.py
+$ python step_tre_MFCC.py
 
 MFCC Parameters
 Window Count = 67
@@ -420,7 +424,7 @@ plt.show()
 
 _Output_:
 ```
-$ python3 step_tre_filterBank.py
+$ python step_tre_filterBank.py
 Filter bank
 Window Count = 298
 Individual Feature Length = 26
@@ -478,7 +482,7 @@ with sr.Microphone(device_index=1) as source:
 
 _Output_:
 ``` text
-$ python3 step_quattro_speechRecognition.py
+$ python step_quattro_speechRecognition.py
 Index 0: Microsoft Sound Mapper - Input
 Index 1: Headset Microphone (Realtek(R)
 Index 2: Gruppo microfoni (Tecnologia In
