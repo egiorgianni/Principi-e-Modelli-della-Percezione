@@ -7,6 +7,23 @@ Approfondimento Principi e Modelli della Percezione a cura di _Edoardo Giorgiann
 
 [Consulta la presentazione](https://www.canva.com/design/DAF2evizlIY/g0-kZHcZTRG3HF4ySbb7Ag/edit?utm_content=DAF2evizlIY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
 
+## Indice
+1. [Introduzione](###Introduzione)
+2. [Apparato Uditivo](###ApparatoUditivo)
+      - [Orecchio esterno](####)
+      - [Orecchio medio](####)
+      - [Orecchio interno](####)
+3. [Modello Strutturale](###)
+      - [Testa](####)
+      - [Orecchio esterno](####)
+      - [Torso e Spalle](####)
+4. [Reti Neurali](###)
+5. [Riconoscimento Vocale](###)
+      - [Lettura di un file audio e generazione di un grafico](####)
+      - [Trasformazione delle frequenze audio](####)
+      - [Segnali Monotoni](####)
+      - [Estrazione delle feature dal discorso](####)
+
 
 ### Introduzione
 ***
@@ -14,6 +31,7 @@ In questo trattato introdurremo le principali componenti del sistema uditivo uma
 
 
 ### Apparato uditivo
+
 ***
 Per rispondere razionalmente agli stimoli prodotti dall’ambiente circostante, l’uomo utilizza i **cinque sensi**. L'**udito** è uno di questi. L’organo che permette di percepire i suoni è l’**orecchio**, suddiviso in **esterno**, **medio** e **interno**.
 
@@ -172,7 +190,7 @@ Signal duration: 3.0 seconds
 
 ***
 
-#### Secondo passo: trasformare le frequenze audio
+#### Secondo passo: trasfromazione delle frequenze audio
 La rappresentazione di un file audio viene fatta, in primo luogo, nel dominio del tempo per ottenere l’intensità (ampiezza) dell’onda sonora. Il limite di questa misurazione è che essa si concentra solo sul volume dell’audio.
 Per questo motivo, il suono viene osservato nel **dominio delle frequenze**. Questo tipo di rappresentazione ci fornisce dettagli sulla presenza di variazioni di frequenza all’interno del segnale. Il concetto matematico usato per la conversione di un segnale continuo dal dominio del tempo a quello delle frequenze è la **_Trasformata di Fourier_**. Useremo la trasformata di Fourier (**FT**) in _Python_ per _convertire i segnali audio in rappresentazioni basate sulla frequenza_.
 
@@ -296,6 +314,6 @@ Nota: ad ogni esecuzione del codice il file generato viene sovrascritto.
 
 ***
 
-#### Terzo passo: estrarre le feature dal discorso
+#### Terzo passo: estrazione delle feature dal discorso
 
 ### DA COMPLETARE
