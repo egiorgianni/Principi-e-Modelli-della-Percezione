@@ -1,4 +1,4 @@
-STATO (per Edo): completare da parte tre in poi - inserire i percorsi delle immagini e dell'indice
+STATO (per Edo): completare da parte tre in poi - inserire i percorsi delle immagini e dell'indice. Tutte le parti di codice sono definitive
 
 ***
 
