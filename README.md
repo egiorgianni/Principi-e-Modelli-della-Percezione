@@ -1,4 +1,6 @@
-STATO: completare da parte tre in poi e rivedere reti neurali
+STATO: completare da parte tre in poi e rivedere reti neurali - inserire i percorsi delle immagini
+
+***
 
 ## Sistema Uditivo e trasformata di _Fourier_
 Approfondimento Principi e Modelli della Percezione a cura di _Edoardo Giorgianni_ e _Kristian Fabbro_.
