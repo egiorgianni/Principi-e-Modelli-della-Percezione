@@ -104,7 +104,7 @@ Nel seguito sarà mostrato del codice _Python_ per effettuare il riconoscimento 
 #### Primo passo: lettura di un file audio e generazione di un grafico
 Lo step iniziale di un algoritmo di _speech recognition_ è la creazione di un sistema in grado di leggere file audio (.wav, .mp3, ecc) e di capirne le informazioni presenti all’interno. _Python_ dispone di librerie per leggere e interpretare questi file. Impostiamo il nostro ambiente di sviluppo per far sì che tutti i seguenti codici funzionino. Installiamo le seguenti librerie:
 ```text
-pip install numpy matplotlib scipy
+$ pip install numpy matplotlib scipy
 ```
 Utilizzata per lo step uno e due e per i segnali monotoni.
 ```text
