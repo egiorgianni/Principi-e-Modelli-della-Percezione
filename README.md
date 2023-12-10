@@ -1,4 +1,4 @@
-STATO: completare da parte tre in poi e rivedere reti neurali - inserire i percorsi delle immagini e dell'indice
+STATO (per Edo): completare da parte tre in poi - inserire i percorsi delle immagini e dell'indice
 
 ***
 
@@ -8,21 +8,23 @@ Approfondimento Principi e Modelli della Percezione a cura di _Edoardo Giorgiann
 [Consulta la presentazione](https://www.canva.com/design/DAF2evizlIY/g0-kZHcZTRG3HF4ySbb7Ag/edit?utm_content=DAF2evizlIY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
 
 ## Indice
-1. [Introduzione](###Introduzione)
-2. [Apparato Uditivo](###ApparatoUditivo)
-      - [Orecchio esterno](####)
-      - [Orecchio medio](####)
-      - [Orecchio interno](####)
-3. [Modello Strutturale](###)
-      - [Testa](####)
-      - [Orecchio esterno](####)
-      - [Torso e Spalle](####)
-4. [Reti Neurali](###)
-5. [Riconoscimento Vocale](###)
-      - [Lettura di un file audio e generazione di un grafico](####)
-      - [Trasformazione delle frequenze audio](####)
-      - [Segnali Monotoni](####)
-      - [Estrazione delle feature dal discorso](####)
+1. [Introduzione](#introduzione)
+2. [Apparato Uditivo](#apparato-uditivo)
+      - [Orecchio esterno](#orecchio-esterno)
+      - [Orecchio medio](#orecchio-medio)
+      - [Orecchio interno](#orecchio-interno)
+3. [Modello Strutturale](#modello-strutturale)
+      - [Testa](#testa)
+      - [Orecchio esterno](#orecchio-esterno-1)
+      - [Torso e Spalle](#torso-e-spalle)
+4. [Reti Neurali](#reti-neurali-da-rivedere)
+5. [Riconoscimento Vocale](#riconoscimento-vocale)
+      - [Lettura di un file audio e generazione di un grafico](#primo-passo-lettura-di-un-file-audio-e-generazione-di-un-grafico)
+      - [Trasformazione delle frequenze audio](#secondo-passo-trasfromazione-delle-frequenze-audio)
+      - [Segnali Monotoni](#importanza-dei-segnali-audio-monotoni)
+      - [Estrazione delle feature dal discorso](#terzo-passo-estrazione-delle-feature-dal-discorso)
+      - [Riconoscimento delle parole parlate](#quarto-passo-riconoscimento-delle-parole-parlate)
+6. [Trasformata di _Fourier_](#trasformata-di-fourier)
 
 
 ### Introduzione
@@ -35,7 +37,9 @@ In questo trattato introdurremo le principali componenti del sistema uditivo uma
 ***
 Per rispondere razionalmente agli stimoli prodotti dall’ambiente circostante, l’uomo utilizza i **cinque sensi**. L'**udito** è uno di questi. L’organo che permette di percepire i suoni è l’**orecchio**, suddiviso in **esterno**, **medio** e **interno**.
 
-![Anatomia dell'orecchio umano](../repository/images/anatomia_orecchio.png)
+<center>
+  <img src="../repository/images/anatomia_orecchio.png" alt="Anatomia dell'orecchio umano">
+</center>
 
 #### Orecchio esterno
 Il ruolo principale dell'**orecchio esterno** è quello di _convogliare_ il _suono_, attraverso il timpano, verso l’orecchio medio.
@@ -84,19 +88,21 @@ Torso e spalle influenzano il suono che arriva al timpano, introducendo due cont
 ![Modello Strutturale - Effetto di Oscuramento](../repository/images/modello_strutturale_oscuramenti.png)
 
 
-### Reti neurali (DA RIVEDERE)
+### Reti neurali
 ***
-Le reti neurali sono fondamentali nel funzionamento del sistema uditivo. Il sistema uditivo del cervello è complesso e coinvolge una serie di reti neurali che elaborano le informazioni uditive in modo da permetterci di percepire e comprendere i suoni.
+Le reti neurali sono fondamentali nel funzionamento del sistema uditivo. Il sistema uditivo del cervello è complesso e coinvolge una serie di reti neurali che lavorano insieme per **elaborare** le **informazioni uditive**, consentendoci di percepire e comprendere i suoni.
 Le reti neurali includono:
-1. Corteccia uditiva: regione principale del cervello coinvolta nella percezione uditiva. È suddivisa in diverse aree specializzate che elaborano informazioni specifiche sui suoni, come la frequenza, l'intensità e la localizzazione. Le reti neurali nella corteccia uditiva rappresentano e interpretano i segnali uditivi
+1. **Corteccia uditiva**; è la parte principale del cervello coinvolta nella percezione uditiva. La corteccia uditiva è divisa in varie aree specializzate che gestiscono specifiche informazioni sui suoni, come la loro _frequenza_, _intensità_ e _localizzazione_. Le reti neurali presenti in questa zona rappresentano e interpretano i segnali uditivi
 
-2. Via uditiva: costituita da una serie di strutture neurali che trasmettono segnali uditivi dal condotto uditivo all'orecchio interno e poi al cervello. Questa via coinvolge il tronco encefalico, il talamo e altre strutture intermedie
+2. **Via uditiva**; questa via coinvolge una serie di strutture neurali che _trasmettono i segnali uditivi dal condotto uditivo all'orecchio interno e poi al cervello_. Essa include il _tronco encefalico_, il _talamo_ e altre strutture intermedie
 
-3. Plasticità cerebrale: le reti neurali nel cervello, comprese quelle coinvolte nel sistema uditivo, sono in grado di modificarsi e adattarsi attraverso la plasticità cerebrale. Questo significa che il cervello può cambiare la sua organizzazione in risposta all'apprendimento e all'esperienza uditiva. Ad esempio, le persone che imparano a suonare uno strumento musicale possono sviluppare aree cerebrali più grandi dedicate al riconoscimento dei suoni musicali
+3. **Plasticità cerebrale**; le reti neurali nel cervello, comprese quelle coinvolte nel sistema uditivo, possono _modificarsi_ e _adattarsi_ attraverso la plasticità cerebrale. Ciò significa che il cervello può cambiare la sua organizzazione in risposta all'_apprendimento_ e all'_esperienza uditiva_.
+Ad esempio, imparare a suonare uno strumento musicale può portare a cambiamenti nelle aree cerebrali dedite al riconoscimento dei suoni musicali
 
-4. Integrazione sensoriale: Il sistema uditivo interagisce con altri sistemi sensoriali, come il sistema visivo, per consentire un'esperienza completa e integrata del mondo circostante. Le reti neurali sono coinvolte nell'elaborazione di informazioni uditive in relazione a informazioni visive, tattili e altre per fornire un quadro complessivo della realtà
+4. **Integrazione sensoriale**; il sistema uditivo interagisce con altri sistemi sensoriali, come la vista, per fornire un'esperienza completa e integrata del mondo circostante.
+Le reti neurali sono coinvolte nell'elaborazione delle _informazioni uditive_ in relazione a quelle _visive_, _tattili_ e di altri sensi, contribuendo a creare una visione complessiva della realtà.
 
-In sintesi, le reti neurali svolgono un ruolo centrale nel sistema uditivo, contribuendo alla percezione, all'elaborazione e all'interpretazione dei suoni nell'ambiente circostante.
+In sintesi, le reti neurali svolgono un ruolo centrale nel sistema uditivo, contribuendo alla **percezione**, all'**elaborazione** e all'**interpretazione** dei **suoni** nell'ambiente circostante.
 
 
 ### Riconoscimento vocale
@@ -124,13 +130,25 @@ Lo step iniziale di un algoritmo di _speech recognition_ è la creazione di un s
 ```text
 $ pip install numpy matplotlib scipy
 ```
-Utilizzata per lo step uno e due e per i segnali monotoni.
+Utilizzata per lo step uno e due e per i segnali monotoni **[inserire link]**.
 ```text
-INSERIRE ALTRE LIBRERIE
+$ pip install python_speech_features
 ```
 ```text
-INSERIRE ALTRE LIBRERIE
+$ pip install numpy matplotlib scipy python_speech_features
 ```
+Utilizzate per lo step tre (sia per MFCC che per Filter Bank) **[inserire link]**.
+```text
+$ pip install SpeechRecognition
+```
+```text
+$ pip install pipwin
+```
+```text
+$ pip install pyaudio
+```
+Utilizzate per lo step quattro **[inserire link]**.
+
 
 SciPy (`scipy.io`) dispone di vari metodi per effettuare operazioni coi file in _Python_ (nel nostro caso la usiamo per la lettura, step uno e due, o la scrittura, segnali monotoni, del file audio).
 
@@ -201,7 +219,9 @@ I segnali audio sono tutti composti da un insieme di tante onde di frequenza, ch
 La trasformata di _Fourier_ permette di **decomporre un segnale estraendo le singole frequenze**. Questo è fondamentale per comprendere quali sono le frequenze che si combinano insieme nel formare i suoni che ascoltiamo. La trasformata di _Fourier_ (FT) fornisce tutte le frequenze presenti nel segnale e mostra anche l'ampiezza di ciascuna di esse.
 Nella sezione di codice che segue, trasformeremo il file `fileAudio.wav` nel suo dominio di frequenza, rappresentando le singole frequenze e la loro ampiezza.
 
-![Trasformata di Fourier](../repository/images/trasformata_fourier.png)
+<center>
+  <img src="../repository/images/trasformata_fourier.png" alt="Trasformata di Fourier">
+</center>
 
 La funzione `np.fft.fft` di NumPy, nel codice successivo, ci permette di calcolare una trasformata discreta di _Fourier_ monodimensionale. La funzione usa l’**algoritmo _Fast Fourier Transform_** (FFT) per convertire una sequenza data in una trasformata di _Fourier_ discreta (DFT). Nel file che stiamo elaborando, abbiamo una sequenza di ampiezze tratte da un file audio che erano state originariamente campionate da un segnale continuo. Useremo la funzione **FFT** per convertire questo dominio del tempo in un segnale discreto nel dominio della frequenza.
 
@@ -315,5 +335,178 @@ Nota: ad ogni esecuzione del codice il file generato viene sovrascritto.
 ***
 
 #### Terzo passo: estrazione delle feature dal discorso
+Una volta trasferito il segnale dal dominio del tempo a quello delle frequenze, lo step successivo è convertire i dati ottenuti in un **vettore di feature**. Per farlo utilizziamo la tecnica **MFCC** (= _Mel-Frequency Cepstrum Coefficient_). Essa è stata sviluppata per l’estrazione delle feature da un segnale audio e per fare ciò utilizza la **scala _MEL_**, scala di segnali audio con vari livelli di tonalità, determinati sulla base della percezione umana dei suoni. La scala _MEL_ fa riferimento ad una gamma uditiva approssimativa per gli esseri umani, compresa tra 20 Hz e 20 KHz. Solitamente, l'orecchio umano distingue meglio i suoni a bassa frequenza rispetto quelli ad alta frequenza.  Esiste un [tool online](https://www.szynalski.com/tone-generator/) che genera il suono a diverse frequenze, riproducendo la scala _MEL_, e ci permette di capire quali sono quelle che l'orecchio umano è in grado di percepire.
 
-### DA COMPLETARE
+Per dividere le bande di frequenza del segnale audio ed estrarre i coefficienti da ognuna delle bande, in modo da creare una separazione tra le diverse frequenze, _MFCC_ usa la trasformata discreta del coseno (**DCT**). È una trasformata simile alla trasformata discreta di _Fourier_ (DFT), ma fa uso solo di **numeri reali** e in alcune varianti l’input e l’output sono traslati di mezzo campione. Lo spettro della DFT è più diffuso dello spettro della DCT e quest’ultima concentra le informazioni nelle **basse frequenze**.
+La trasformata discreta di _Fourier_ (**DFT**) inoltre è una tipologia di trasformata che converte una collezione finita di campioni equi spaziati di una funzione in una collezione di coefficienti di una combinazione lineare di sinusoidi complesse, ordinate al crescere della frequenza. Analogamente alla trasformata di _Fourier_, si tratta di un modo per rappresentare una **funzione** (la cui variabile è spesso il tempo) **nel dominio delle frequenze**. Le frequenze delle sinusoidi della combinazione lineare (periodica) prodotta dalla trasformata sono multipli interi di una frequenza fondamentale, il cui periodo è la lunghezza dell'intero intervallo di campionamento, cioè la durata del segnale. Si differenzia dalla trasformata di _Fourier_ a tempo discreto per il fatto che la funzione in ingresso e la funzione prodotta sono successioni finite, e può essere quindi considerata come una trasformata per l'analisi di _Fourier_ di funzioni su un dominio limitato e discreto.
+
+<center>
+  <img src="../repository/images/dft_dct.png" alt="Confronto DCT e DFT">
+</center>
+
+Per calcolare quindi la potenza di una banda di frequenza attraverso la DFT, il **primo passo** è **distinguere** le diverse **bande** di **feature** disponibili (ottenibili da MFCC). Una volta effettuate queste suddivisioni, utilizziamo i **banchi di filtri per partizionare le frequenze**. I banchi di filtri possono essere creati utilizzando qualsiasi frequenza specificata per le partizioni. L’intervallo tra i filtri all'interno di un banco cresce esponenzialmente all'aumentare della frequenza, per fare questo procedimento è possibile utilizzare la tecnica del MEL–spaced Filterbank. Attraverso dei metodi di _Python_ è possibile andare a creare direttamente i filtri per eseguire la funzionalità MFCC sul suono, inoltre è anche possibile separare le bande di frequenza.
+
+~~L'MFCC e la creazione dei banchi di filtri (Filter Banks) sono influenzati dal modo in cui gli esseri umani percepiscono il suono. Tuttavia, questa elaborazione richiede anche molti calcoli matematici che stanno dietro l’implementazione. _Python_ ci fornisce direttamente i metodi per creare i filtri e per eseguire la funzionalità MFCC sul suono, ma vogliamo anche dare uno sguardo alla matematica dietro queste operazioni. I tre modelli matematici discreti che entrano in questa elaborazione sono il Discrete Cosine Transform (DCT), che viene utilizzato per la scorrelazione dei coefficienti del banco dei filtri, definito anche come “imbiancamento” del suono, e le Gaussian Mixture Models – Hidden Markov Models (GMMs–HMMs), uno standard per gli algoritmi di Automatic Speech Recognition (ASR). Grazie al fatto che al giorno d'oggi i costi computazionali sono diminuiti grazie al Cloud Computing, per queste tecniche vengono utilizzati sistemi vocali di deep learning che sono meno suscettibili al rumore. Inoltre, bisogna notare che DCT è un algoritmo di trasformazione lineare e che quindi potrebbe escludere molti segnali utili, essendo il suono altamente non lineare.~~
+
+``` python
+# MFCC
+# Importiamo le librerie necessarie
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.io import wavfile
+from python_speech_features import mfcc, logfbank
+
+# Leggiamo il file audio WAV ("fileAudio.wav") utilizzando scipy.io.wavfile.read()
+sampling_freq, sig_audio = wavfile.read("fileAudio.wav")
+
+# Per l’analisi prendiamo i primi 15mila esempi del segnale originale 
+sig_audio = sig_audio[:15000]
+
+# Usiamo MFCC per estrarre le feature dal segnale
+mfcc_feat = mfcc(sig_audio, sampling_freq)
+
+# Stampa le dimensioni delle feature MFCC
+print('\nMFCC Parameters\nWindow Count =', mfcc_feat.shape[0])
+print('Individual Feature Length =', mfcc_feat.shape[1])
+
+# Trasponiamo le features per una migliore visualizzazione
+mfcc_feat = mfcc_feat.T
+
+# Visualizziamo la matrice delle features con plt.matshow
+plt.matshow(mfcc_feat, cmap='viridis')
+plt.title('MFCC Features')
+plt.show()
+```
+
+_Output_:
+```
+$ python3 step_tre_MFCC.py
+
+MFCC Parameters
+Window Count = 67
+Individual Feature Length = 13
+```
+![Alt text](../repository/code/images/step_tre_MFCC.png)
+
+``` python
+# Filter Bank
+# Importiamo le librerie necessarie
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.io import wavfile
+from python_speech_features import mfcc, logfbank
+
+# Leggiamo il file audio WAV ("fileAudio.wav") utilizzando scipy.io.wavfile.read()
+sampling_freq, sig_audio = wavfile.read("fileAudio.wav")
+
+# Le prime linee gialle orizzontali sotto ogni segmento sono la frequenza fondamentale e il suo massimo.
+# Sotto la linea gialla ci sono le armoniche, che condividono tra loro la stessa distanza in termini di frequenza.
+
+# Generazione delle feature del banco dei filtri
+fb_feat = logfbank(sig_audio, sampling_freq)
+
+# Stampa delle dimensioni delle feature del banco dei filtri
+print('\nFilter bank\nWindow Count =', fb_feat.shape[0])
+print('Individual Feature Length =', fb_feat.shape[1])
+
+# Trasponiamo le features per una migliore visualizzazione
+fb_feat = fb_feat.T
+
+# Visualizziamo la matrice delle features con plt.matshow
+plt.matshow(fb_feat, cmap='viridis')
+plt.title('Features from Filter bank')
+plt.show()
+```
+
+_Output_:
+```
+$ python3 step_tre_filterBank.py
+Filter bank
+Window Count = 298
+Individual Feature Length = 26
+```
+![Alt text](../repository/code/images/step_tre_filterBank.png)
+
+
+***
+
+### Trasformata di _Fourier_
+
+***
+
+#### Quarto passo: riconoscimento delle parole parlate
+
+
+
+``` python
+# Importiamo la libreria per il riconoscimento vocale
+import speech_recognition as sr
+
+# Creiamo un oggetto recognizer per memorizzare l'input
+rec = sr.Recognizer()
+
+# Lista dei microfoni disponibili
+microphones = sr.Microphone.list_microphone_names()
+
+# Stampa gli indici e i nomi dei dispositivi
+for index, device_name in enumerate(microphones):
+    print(f"Index {index}: {device_name}")
+
+# Utilizza il microfono con indice 1 (modifica l'indice se necessario)
+with sr.Microphone(device_index=1) as source:
+    try:
+        # Regola automaticamente per il rumore ambientale
+        print("Reach the Microphone and say something!")
+        rec.adjust_for_ambient_noise(source, duration=3)
+        
+        # Ascolta l'audio dal microfono
+        audio = rec.listen(source)
+        print("Recording completed.")
+
+        # Usa la funzione recognize per trascrivere il parlato in testo
+        text = rec.recognize_google(audio)
+        print("I think you said:", text)
+
+    except sr.UnknownValueError:
+        # Errore se il riconoscitore non riesce a comprendere l'audio
+        print("Could not understand audio")
+    except sr.RequestError as e:
+        # Errore se c'è un problema nella richiesta al servizio di riconoscimento vocale (es. connessione a Internet)
+        print(f"Error making the request: {e}")
+```
+
+
+_Output_:
+``` text
+$ python3 step_quattro_speechRecognition.py
+Index 0: Microsoft Sound Mapper - Input
+Index 1: Headset Microphone (Realtek(R)
+Index 2: Gruppo microfoni (Tecnologia In
+Index 3: Microsoft Sound Mapper - Output
+Index 4: airpods (Realtek(R) Audio)
+Index 5: Speaker (Realtek(R) Audio)
+Index 6: Driver primario di acquisizione suoni
+Index 7: Headset Microphone (Realtek(R) Audio)
+Index 8: Gruppo microfoni (Tecnologia IntelÂ®️ Smart Sound per microfoni digitali)
+Index 9: Driver audio principale
+Index 10: airpods (Realtek(R) Audio)
+Index 11: Speaker (Realtek(R) Audio)
+Index 12: airpods (Realtek(R) Audio)
+Index 13: Speaker (Realtek(R) Audio)
+Index 14: Gruppo microfoni (Tecnologia IntelÂ®️ Smart Sound per microfoni digitali)
+Index 15: Headset Microphone (Realtek(R) Audio)
+Index 16: Missaggio stereo (Realtek HD Audio Stereo input)
+Index 17: Microfono (Realtek HD Audio Mic input)
+Index 18: Speakers 1 (Realtek HD Audio output with SST)
+Index 19: Speakers 2 (Realtek HD Audio output with SST)
+Index 20: Altoparlante PC (Realtek HD Audio output with SST)
+Index 21: Headphones 1 (Realtek HD Audio 2nd output with SST)
+Index 22: Headphones 2 (Realtek HD Audio 2nd output with SST)
+Index 23: Altoparlante PC (Realtek HD Audio 2nd output with SST)
+Index 24: Gruppo microfoni 1 ()
+Index 25: Gruppo microfoni 2 ()
+Index 26: Gruppo microfoni 3 ()
+Reach the Microphone and say something!
+Recording completed.
+I think you said: hello world
+```
