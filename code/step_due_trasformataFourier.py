@@ -43,18 +43,3 @@ plt.plot(x_axis, exp_signal, color='green', linewidth=1)
 plt.xlabel('Frequency Representation (kHz)')
 plt.ylabel('Power of Signal (dB)')
 plt.show()
-
-# NON INSERIRE QUESTA PARTE NEL README
-# ricordare l'installazione delle librerie:
-# pip install numpy matplotlib scipy
-# SciPy (scipy.io) dispone di vari metodi per effettuare operazioni coi file in Python (nel nostro caso la usiamo per la lettura del file audio)
-# NumPy (numpy) è una libreria Python per la computazione scientifica
-# Matplotlib (matplotlib.pyplot) è una libreria Python per la visualizzazione dei dati
-
-# OUTPUT:
-# $ python3 step_due_trasformataFourier.py
-#
-# Shape of the Signal: (66150,)
-# Signal Datatype: int16
-# Signal duration: 3.0 seconds
-# + foto del grafico

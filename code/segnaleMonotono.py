@@ -28,15 +28,3 @@ plt.xlabel('Time (seconds)')
 plt.ylabel('Sound Amplitude')
 plt.title('Audio Signal Generation')
 plt.show()
-
-# NON INSERIRE QUESTA PARTE NEL README
-# ricordare l'installazione delle librerie:
-# pip install numpy matplotlib scipy
-# SciPy (scipy.io) dispone di vari metodi per effettuare operazioni coi file in Python (nel nostro caso la usiamo per la scrittura del file audio)
-# NumPy (numpy) è una libreria Python per la computazione scientifica
-# Matplotlib (matplotlib.pyplot) è una libreria Python per la visualizzazione dei dati
-
-# OUTPUT:
-# $ python3 segnaleMonotono.py
-# creazione segnaleMonotono_generato.wav [nota che ogni esecuzione del programma sovrascrive il file]
-# + foto del grafico

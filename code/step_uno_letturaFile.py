@@ -29,19 +29,3 @@ plt.xlabel('Time (milliseconds)')
 plt.ylabel('Amplitude')
 plt.title('Input audio signal')
 plt.show()
-
-
-# NON INSERIRE QUESTA PARTE NEL README
-# ricordare l'installazione delle librerie:
-# pip install numpy matplotlib scipy
-# SciPy (scipy.io) dispone di vari metodi per effettuare operazioni coi file in Python (nel nostro caso la usiamo per la lettura del file audio)
-# NumPy (numpy) è una libreria Python per la computazione scientifica
-# Matplotlib (matplotlib.pyplot) è una libreria Python per la visualizzazione dei dati
-
-# OUTPUT:
-# $ python3 step_uno_letturaFile.py 
-#
-# Shape of Signal: (66150,)
-# Signal Datatype: int16
-# Signal duration: 3.0 seconds
-# + foto del grafico
