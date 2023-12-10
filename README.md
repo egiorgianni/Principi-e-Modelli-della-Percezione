@@ -1,4 +1,4 @@
-STATO: completare da parte tre in poi e rivedere reti neurali - inserire i percorsi delle immagini
+STATO: completare da parte tre in poi e rivedere reti neurali - inserire i percorsi delle immagini e dell'indice
 
 ***
 
