@@ -38,7 +38,7 @@ In questo trattato introdurremo le principali componenti del sistema uditivo uma
 Per rispondere razionalmente agli stimoli prodotti dall’ambiente circostante, l’uomo utilizza i **cinque sensi**. L'**udito** è uno di questi. L’organo che permette di percepire i suoni è l’**orecchio**, suddiviso in **esterno**, **medio** e **interno**.
 
 <center>
-  <img src="../repository/images/anatomia_orecchio.png" alt="Anatomia dell'orecchio umano">
+  <img src="images/anatomia_orecchio.png" alt="Anatomia dell'orecchio umano">
 </center>
 
 #### Orecchio esterno
@@ -72,7 +72,7 @@ Il modello strutturale permette di differenziare le componenti dell’essere uma
 #### Testa
 La testa è un _ostacolo_ per la libera _propagazione_ del _suono_ e per questo motivo introduce _due effetti_ principali:
 - **ITD** (_Interaural Time Difference_); causato dal fatto che le onde sonore devono percorrere una _maggiore distanza_ per raggiungere l’_orecchio più lontano_. Per intendere ciò è sufficiente considerare una sorgente e la testa come sferica. Come si può notare dalla figura, delle banali considerazioni geometriche permettono di affermare che il raggio per raggiungere l’orecchio più lontano è maggiore rispetto a quello dell'orecchio più vicino
-![Modello Strutturale - Testa](../repository/images/modello_strutturale_testa.png)
+![Modello Strutturale - Testa](images/modello_strutturale_testa.png)
 
 - **ILD** (_Interaural Level Difference_); esprime la condizione secondo la quale l’_orecchio più lontano_ riceve un _suono_ di _minore intensità_. L'_ILD_ è fortemente legato alla _frequenza_: a basse frequenze non vi è alcuna differenza, mentre ad alte frequenze diventa particolarmente significativo
 
@@ -82,10 +82,10 @@ Come mostrato precedentemente, l’orecchio esterno è caratterizzato dalla pinn
 #### Torso e Spalle
 Torso e spalle influenzano il suono che arriva al timpano, introducendo due contributi: **riflessione sonora** ed **effetto di oscuramento**. La sagoma delle due parti assomiglia a un pupazzo di neve, per questo motivo il modello viene chiamato _snowman model_.
 - **Riflessioni**: quando si misura la risposta impulsiva all'orecchio destro, l'impulso iniziale è seguito da una serie di altri impulsi, il cui ritardo varia in base all'elevazione della sorgente sonora. Si può utilizzare la geometria semplificata del _modello snowman_ per calcolare i _ritardi_ dei _raggi riflessi_, considerando i parametri del modello e la posizione della sorgente sonora. Il ritardo tra il suono diretto e il riflesso non varia significativamente se la sorgente si muove su una _circonferenza orizzontale_, ma varia sensibilmente se si muove _verticalmente_.  
-![Modello Strutturale - Riflessione Sonora](../repository/images/modello_strutturale_riflessioni.png)
+![Modello Strutturale - Riflessione Sonora](images/modello_strutturale_riflessioni.png)
 
 - **Oscuramento**: man mano che la sorgente si muove verso il basso, le _riflessioni scompaiono_, dando spazio all'effetto di oscuramento. I raggi che vanno dall'orecchio ai punti di tangenza della parte superiore del torso delimitano il _cono di oscuramento_.  
-![Modello Strutturale - Effetto di Oscuramento](../repository/images/modello_strutturale_oscuramenti.png)
+![Modello Strutturale - Effetto di Oscuramento](images/modello_strutturale_oscuramenti.png)
 
 
 ### Reti neurali
@@ -202,7 +202,7 @@ Shape of Signal: (66150,)
 Signal Datatype: int16
 Signal duration: 3.0 seconds
 ```
-![output_step_uno](../repository/code/images/step_uno.png)
+![output_step_uno](/images/step_uno.png)
 
 ***
 
@@ -218,7 +218,7 @@ La trasformata di _Fourier_ permette di **decomporre un segnale estraendo le sin
 Nella sezione di codice che segue, trasformeremo il file `fileAudio.wav` nel suo dominio di frequenza, rappresentando le singole frequenze e la loro ampiezza.
 
 <center>
-  <img src="../repository/images/trasformata_fourier.png" alt="Trasformata di Fourier">
+  <img src="/images/trasformata_fourier.png" alt="Trasformata di Fourier">
 </center>
 
 La funzione `np.fft.fft` di NumPy, nel codice successivo, ci permette di calcolare una trasformata discreta di _Fourier_ monodimensionale. La funzione usa l’**algoritmo _Fast Fourier Transform_** (FFT) per convertire una sequenza data in una trasformata di _Fourier_ discreta (DFT). Nel file che stiamo elaborando, abbiamo una sequenza di ampiezze tratte da un file audio che erano state originariamente campionate da un segnale continuo. Useremo la funzione **FFT** per convertire questo dominio del tempo in un segnale discreto nel dominio della frequenza.
@@ -279,7 +279,7 @@ Shape of the Signal: (66150,)
 Signal Datatype: int16
 Signal duration: 3.0 seconds
 ```
-![Alt text](../repository/code/images/step_due.png)
+![Alt text](/code/images/step_due.png)
 
 ***
 
@@ -332,7 +332,7 @@ $ python segnaleMonotono.py
 viene generato il file `segnaleMonotono_generato.wav` e la sua rappresentazione sul grafico.
 Nota: ad ogni esecuzione del codice il file generato viene sovrascritto.
 
-![Segnale Monotono](../repository/code/images/segnaleMonotono.png)
+![Segnale Monotono](/code/images/segnaleMonotono.png)
 
 ***
 
@@ -344,7 +344,7 @@ La trasformata discreta di _Fourier_ (**DFT** = _Discrete Fourier Transform_) ra
 La DFT è comunemente utilizzata in segnali e sistemi digitali, elaborazione numerica dei segnali, compressione audio, elaborazione delle immagini e in molte altre applicazioni.
 
 <center>
-  <img src="../repository/images/dft_dct.png" alt="Confronto DCT e DFT">
+  <img src="/images/dft_dct.png" alt="Confronto DCT e DFT">
 </center>
 
 Per calcolare la potenza di una banda di frequenza attraverso la DFT, il **primo passo** è **distinguere** le diverse **bande** di **feature** disponibili (ottenibili da MFCC). Una volta effettuate queste suddivisioni, vengono utilizzati i **banchi di filtri per partizionare le frequenze**. I banchi di filtri possono essere creati utilizzando qualsiasi frequenza specificata per le partizioni. L’intervallo tra i filtri all'interno di un banco cresce esponenzialmente all'aumentare della frequenza, per fare questo procedimento è possibile utilizzare la tecnica del _MEL–spaced Filterbank_.
@@ -388,7 +388,7 @@ MFCC Parameters
 Window Count = 67
 Individual Feature Length = 13
 ```
-![Alt text](../repository/code/images/step_tre_MFCC.png)
+![Alt text](/code/images/step_tre_MFCC.png)
 
 ``` python
 # Filter Bank
@@ -427,7 +427,7 @@ Filter bank
 Window Count = 298
 Individual Feature Length = 26
 ```
-![Alt text](../repository/code/images/step_tre_filterBank.png)
+![Alt text](/code/images/step_tre_filterBank.png)
 
 
 ***
@@ -438,7 +438,7 @@ La trasformata di _Fourier_ (**FT**) è uno strumento molto potente implementato
 La trasformata di _Fourier_ permette di scomporre una funzione non periodica in una combinazione lineare di funzioni con base _e<sup>jωt</sup>_.  
 Il segnale viene scomposto in un integrale, detto **integrale di _Fourier_** che può essere scritto in forma esponenziale, dove i coefficienti della combinazione lineare sono i dati della funzione continua F(ω) che rappresenta lo spettro della funzione f(t). in particolare:
 <center>
-  <img src="../repository/images/formula_trasformata_Fourier.png" alt="Formula Trasformata Fourier">
+  <img src="/images/formula_trasformata_Fourier.png" alt="Formula Trasformata Fourier">
 </center>
 
 - _F(ω)_ è la trasformata di _Fourier_ della funzione _F(t)_ rispetto alla frequenza _ω_
@@ -481,7 +481,7 @@ Riduzione del **rumore ambientale**: qualsiasi ambiente è incline alla presenza
 La seguente immagine mostra il flusso di lavoro dell'API di Google _Speech Recognition_ utilizzando la classe `Microphone`.   
 
 <center>
-  <img src="../repository/images/speech_recognition.png" alt="Speech Recognition">
+  <img src="/images/speech_recognition.png" alt="Speech Recognition">
 </center>
 
 ``` python
