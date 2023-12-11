@@ -1,7 +1,3 @@
-STATO (per Edo): completare da parte tre in poi - inserire i percorsi delle immagini e dell'indice. Tutte le parti di codice sono definitive
-
-***
-
 ## Sistema Uditivo e trasformata di _Fourier_
 Approfondimento Principi e Modelli della Percezione a cura di _Edoardo Giorgianni_ e _Kristian Fabbro_.
 
