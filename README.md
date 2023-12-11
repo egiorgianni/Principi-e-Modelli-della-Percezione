@@ -213,9 +213,9 @@ I segnali audio sono tutti composti da un insieme di tante onde di frequenza, ch
 La trasformata di _Fourier_ permette di **decomporre un segnale estraendo le singole frequenze**. Questo è fondamentale per comprendere quali sono le frequenze che si combinano insieme nel formare i suoni che ascoltiamo. La trasformata di _Fourier_ (FT) fornisce tutte le frequenze presenti nel segnale e mostra anche l'ampiezza di ciascuna di esse.
 Nella sezione di codice che segue, trasformeremo il file `fileAudio.wav` nel suo dominio di frequenza, rappresentando le singole frequenze e la loro ampiezza.
 
-<center>
+<p align="center">
   <img src="/images/trasformata_fourier.png" alt="Trasformata di Fourier">
-</center>
+</p>
 
 La funzione `np.fft.fft` di NumPy, nel codice successivo, ci permette di calcolare una trasformata discreta di _Fourier_ monodimensionale. La funzione usa l’**algoritmo _Fast Fourier Transform_** (FFT) per convertire una sequenza data in una trasformata di _Fourier_ discreta (DFT). Nel file che stiamo elaborando, abbiamo una sequenza di ampiezze tratte da un file audio che erano state originariamente campionate da un segnale continuo. Useremo la funzione **FFT** per convertire questo dominio del tempo in un segnale discreto nel dominio della frequenza.
 
