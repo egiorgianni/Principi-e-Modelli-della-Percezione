@@ -67,7 +67,7 @@ Il modello strutturale permette di differenziare le componenti dell’essere uma
 
 #### Testa
 La testa è un _ostacolo_ per la libera _propagazione_ del _suono_ e per questo motivo introduce _due effetti_ principali:
-- **ITD** (_Interaural Time Difference_); causato dal fatto che le onde sonore devono percorrere una _maggiore distanza_ per raggiungere l’_orecchio più lontano_. Per intendere ciò è sufficiente considerare una sorgente e la testa come sferica. Come si può notare dalla figura, delle banali considerazioni geometriche permettono di affermare che il raggio per raggiungere l’orecchio più lontano è maggiore rispetto a quello dell'orecchio più vicino
+- **ITD** (_Interaural Time Difference_); causato dal fatto che le onde sonore devono percorrere una _maggiore distanza_ per raggiungere l’_orecchio più lontano_. Per intendere ciò è sufficiente considerare una sorgente e la testa come sferica. Come si può notare dalla figura, delle banali considerazioni geometriche permettono di affermare che il raggio per raggiungere l’orecchio più lontano è maggiore rispetto a quello dell'orecchio più vicino   
 ![Modello Strutturale - Testa](images/modello_strutturale_testa.png)
 
 - **ILD** (_Interaural Level Difference_); esprime la condizione secondo la quale l’_orecchio più lontano_ riceve un _suono_ di _minore intensità_. L'_ILD_ è fortemente legato alla _frequenza_: a basse frequenze non vi è alcuna differenza, mentre ad alte frequenze diventa particolarmente significativo
