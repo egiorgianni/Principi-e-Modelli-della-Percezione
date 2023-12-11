@@ -198,7 +198,7 @@ Shape of Signal: (66150,)
 Signal Datatype: int16
 Signal duration: 3.0 seconds
 ```
-![output_step_uno](/images/step_uno.png)
+![output_step_uno](code/images/step_uno.png)
 
 ***
 
