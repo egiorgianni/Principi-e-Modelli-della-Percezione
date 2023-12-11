@@ -33,9 +33,9 @@ In questo trattato introdurremo le principali componenti del sistema uditivo uma
 ***
 Per rispondere razionalmente agli stimoli prodotti dall’ambiente circostante, l’uomo utilizza i **cinque sensi**. L'**udito** è uno di questi. L’organo che permette di percepire i suoni è l’**orecchio**, suddiviso in **esterno**, **medio** e **interno**.
 
-<center>
+<p align="center">
   <img src="images/anatomia_orecchio.png" alt="Anatomia dell'orecchio umano">
-</center>
+</p>
 
 #### Orecchio esterno
 Il ruolo principale dell'**orecchio esterno** è quello di _convogliare_ il _suono_, attraverso il timpano, verso l’orecchio medio.
@@ -339,9 +339,9 @@ Per dividere le bande di frequenza del segnale audio ed estrarre i coefficienti 
 La trasformata discreta di _Fourier_ (**DFT** = _Discrete Fourier Transform_) rappresenta una versione discreta della Trasformata di _Fourier_, che è utilizzata per analizzare segnali continui nel dominio del tempo. La DFT **converte** una sequenza finita di campioni di un segnale nel **dominio** del **tempo** in una sequenza di campioni nel **dominio** della **frequenza**. Questa trasformazione è utile per analizzare la composizione in frequenza di un **segnale discreto**, scomponendolo nei suoi componenti sinusoidali. Le frequenze delle sinusoidi della combinazione lineare (periodica) prodotta dalla trasformata sono multipli interi di una frequenza fondamentale, il cui periodo è la lunghezza dell'intero intervallo di campionamento, cioè la durata del segnale.
 La DFT è comunemente utilizzata in segnali e sistemi digitali, elaborazione numerica dei segnali, compressione audio, elaborazione delle immagini e in molte altre applicazioni.
 
-<center>
+<p align="center">
   <img src="/images/dft_dct.png" alt="Confronto DCT e DFT">
-</center>
+</p>
 
 Per calcolare la potenza di una banda di frequenza attraverso la DFT, il **primo passo** è **distinguere** le diverse **bande** di **feature** disponibili (ottenibili da MFCC). Una volta effettuate queste suddivisioni, vengono utilizzati i **banchi di filtri per partizionare le frequenze**. I banchi di filtri possono essere creati utilizzando qualsiasi frequenza specificata per le partizioni. L’intervallo tra i filtri all'interno di un banco cresce esponenzialmente all'aumentare della frequenza, per fare questo procedimento è possibile utilizzare la tecnica del _MEL–spaced Filterbank_.
 Attraverso dei metodi di _Python_ è possibile andare a creare direttamente i filtri per eseguire la funzionalità MFCC sul suono, inoltre è anche possibile separare le bande di frequenza.
@@ -433,9 +433,9 @@ La trasformata di _Fourier_ (**FT**) è uno strumento molto potente implementato
 
 La trasformata di _Fourier_ permette di scomporre una funzione non periodica in una combinazione lineare di funzioni con base _e<sup>jωt</sup>_.  
 Il segnale viene scomposto in un integrale, detto **integrale di _Fourier_** che può essere scritto in forma esponenziale, dove i coefficienti della combinazione lineare sono i dati della funzione continua F(ω) che rappresenta lo spettro della funzione f(t). in particolare:
-<center>
+<p align="center">
   <img src="/images/formula_trasformata_Fourier.png" alt="Formula Trasformata Fourier">
-</center>
+</p>
 
 - _F(ω)_ è la trasformata di _Fourier_ della funzione _F(t)_ rispetto alla frequenza _ω_
 - _j_ è l’unità immaginaria (ricorda: _j<sup>2</sup> = -1_)
@@ -476,9 +476,9 @@ Riduzione del **rumore ambientale**: qualsiasi ambiente è incline alla presenza
 
 La seguente immagine mostra il flusso di lavoro dell'API di Google _Speech Recognition_ utilizzando la classe `Microphone`.   
 
-<center>
+<p align="center">
   <img src="/images/speech_recognition.png" alt="Speech Recognition">
-</center>
+</p>
 
 ``` python
 # Importiamo la libreria per il riconoscimento vocale
