@@ -13,7 +13,7 @@ Approfondimento Principi e Modelli della Percezione a cura di _Edoardo Giorgiann
       - [Testa](#testa)
       - [Orecchio esterno](#orecchio-esterno-1)
       - [Torso e Spalle](#torso-e-spalle)
-4. [Reti Neurali](#reti-neurali-da-rivedere)
+4. [Reti Neurali](#reti-neurali)
 5. [Riconoscimento Vocale](#riconoscimento-vocale)
       - [Lettura di un file audio e generazione di un grafico](#primo-passo-lettura-di-un-file-audio-e-generazione-di-un-grafico)
       - [Trasformazione delle frequenze audio](#secondo-passo-trasfromazione-delle-frequenze-audio)
