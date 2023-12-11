@@ -5,7 +5,7 @@ STATO (per Edo): completare da parte tre in poi - inserire i percorsi delle imma
 ## Sistema Uditivo e trasformata di _Fourier_
 Approfondimento Principi e Modelli della Percezione a cura di _Edoardo Giorgianni_ e _Kristian Fabbro_.
 
-[Consulta la presentazione](https://www.canva.com/design/DAF2evizlIY/g0-kZHcZTRG3HF4ySbb7Ag/edit?utm_content=DAF2evizlIY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
+[Consulta la presentazione]().
 
 ## Indice
 1. [Introduzione](#introduzione)
@@ -149,12 +149,10 @@ $ pip install pyaudio
 ```
 Utilizzate per lo step quattro **[inserire link]**.
 
-
-SciPy (`scipy.io`) dispone di vari metodi per effettuare operazioni coi file in _Python_ (nel nostro caso la usiamo per la lettura, step uno e due, o la scrittura, segnali monotoni, del file audio).
-
-NumPy (`numpy`) è una libreria _Python_ per la computazione scientifica.
-
-Matplotlib (`matplotlib.pyplot`) è una libreria _Python_ per la visualizzazione dei dati.
+SciPy (`scipy.io`) dispone di vari metodi per effettuare operazioni coi file in _Python_ (nel nostro caso la usiamo per la lettura, step uno e due, o la scrittura, segnali monotoni, del file audio).   
+NumPy (`numpy`) è una libreria _Python_ per la computazione scientifica.   
+Matplotlib (`matplotlib.pyplot`) è una libreria _Python_ per la visualizzazione dei dati.   
+La libreria open–source `pyaudio` consente di registrare l'audio tramite un microfono collegato all'ambiente di sviluppo e analizzarlo con _Python_ in tempo reale. L'installazione di _PyAudio_ varia in base al sistema operativo.
 
 Lo scopo di questo step è visualizzare i segnali audio come **punti strutturati**, cioè sotto forma di curva all’interno di un **grafico**.
 
@@ -339,18 +337,18 @@ Nota: ad ogni esecuzione del codice il file generato viene sovrascritto.
 ***
 
 #### Terzo passo: estrazione delle feature dal discorso
-Una volta trasferito il segnale dal dominio del tempo a quello delle frequenze, lo step successivo è convertire i dati ottenuti in un **vettore di feature**. Per farlo utilizziamo la tecnica **MFCC** (= _Mel-Frequency Cepstrum Coefficient_). Essa è stata sviluppata per l’estrazione delle feature da un segnale audio e per fare ciò utilizza la **scala _MEL_**, scala di segnali audio con vari livelli di tonalità, determinati sulla base della percezione umana dei suoni. La scala _MEL_ fa riferimento ad una gamma uditiva approssimativa per gli esseri umani, compresa tra 20 Hz e 20 KHz. Solitamente, l'orecchio umano distingue meglio i suoni a bassa frequenza rispetto quelli ad alta frequenza.  Esiste un [tool online](https://www.szynalski.com/tone-generator/) che genera il suono a diverse frequenze, riproducendo la scala _MEL_, e ci permette di capire quali sono quelle che l'orecchio umano è in grado di percepire.
+Una volta trasferito il segnale dal dominio del tempo a quello delle frequenze, lo step successivo è convertire i dati ottenuti in un **vettore di feature**. Per farlo viene utilizzata la tecnica **MFCC** (= _Mel-Frequency Cepstrum Coefficient_). Essa è stata sviluppata per l’estrazione delle feature da un segnale audio, utilizzando la **scala _MEL_**; scala di segnali audio con vari livelli di tonalità, determinati sulla base della percezione umana dei suoni. La scala _MEL_ fa riferimento ad una gamma uditiva approssimativa per gli esseri umani, compresa tra 20 Hz e 20 KHz. Solitamente, l'orecchio umano distingue meglio i suoni a bassa frequenza rispetto quelli ad alta frequenza.  Esiste un [tool online](https://www.szynalski.com/tone-generator/) che genera il suono a diverse frequenze, riproducendo la scala _MEL_, e ci permette di capire quali sono quelle che l'orecchio umano è in grado di percepire.
 
-Per dividere le bande di frequenza del segnale audio ed estrarre i coefficienti da ognuna delle bande, in modo da creare una separazione tra le diverse frequenze, _MFCC_ usa la trasformata discreta del coseno (**DCT**). È una trasformata simile alla trasformata discreta di _Fourier_ (DFT), ma fa uso solo di **numeri reali** e in alcune varianti l’input e l’output sono traslati di mezzo campione. Lo spettro della DFT è più diffuso dello spettro della DCT e quest’ultima concentra le informazioni nelle **basse frequenze**.
-La trasformata discreta di _Fourier_ (**DFT**) inoltre è una tipologia di trasformata che converte una collezione finita di campioni equi spaziati di una funzione in una collezione di coefficienti di una combinazione lineare di sinusoidi complesse, ordinate al crescere della frequenza. Analogamente alla trasformata di _Fourier_, si tratta di un modo per rappresentare una **funzione** (la cui variabile è spesso il tempo) **nel dominio delle frequenze**. Le frequenze delle sinusoidi della combinazione lineare (periodica) prodotta dalla trasformata sono multipli interi di una frequenza fondamentale, il cui periodo è la lunghezza dell'intero intervallo di campionamento, cioè la durata del segnale. Si differenzia dalla trasformata di _Fourier_ a tempo discreto per il fatto che la funzione in ingresso e la funzione prodotta sono successioni finite, e può essere quindi considerata come una trasformata per l'analisi di _Fourier_ di funzioni su un dominio limitato e discreto.
+Per dividere le bande di frequenza del segnale audio ed estrarre i coefficienti da ognuna di esse, _MFCC_ usa la trasformata discreta del coseno (**DCT**). È una trasformata simile alla trasformata discreta di _Fourier_ (DFT), ma fa uso solo di **numeri reali** e in alcune varianti l’input e l’output sono traslati di mezzo campione. Lo spettro della DFT è più diffuso dello spettro della DCT e quest’ultima concentra le informazioni nelle **basse frequenze**.
+La trasformata discreta di _Fourier_ (**DFT** = _Discrete Fourier Transform_) rappresenta una versione discreta della Trasformata di _Fourier_, che è utilizzata per analizzare segnali continui nel dominio del tempo. La DFT **converte** una sequenza finita di campioni di un segnale nel **dominio** del **tempo** in una sequenza di campioni nel **dominio** della **frequenza**. Questa trasformazione è utile per analizzare la composizione in frequenza di un **segnale discreto**, scomponendolo nei suoi componenti sinusoidali. Le frequenze delle sinusoidi della combinazione lineare (periodica) prodotta dalla trasformata sono multipli interi di una frequenza fondamentale, il cui periodo è la lunghezza dell'intero intervallo di campionamento, cioè la durata del segnale.
+La DFT è comunemente utilizzata in segnali e sistemi digitali, elaborazione numerica dei segnali, compressione audio, elaborazione delle immagini e in molte altre applicazioni.
 
 <center>
   <img src="../repository/images/dft_dct.png" alt="Confronto DCT e DFT">
 </center>
 
-Per calcolare quindi la potenza di una banda di frequenza attraverso la DFT, il **primo passo** è **distinguere** le diverse **bande** di **feature** disponibili (ottenibili da MFCC). Una volta effettuate queste suddivisioni, utilizziamo i **banchi di filtri per partizionare le frequenze**. I banchi di filtri possono essere creati utilizzando qualsiasi frequenza specificata per le partizioni. L’intervallo tra i filtri all'interno di un banco cresce esponenzialmente all'aumentare della frequenza, per fare questo procedimento è possibile utilizzare la tecnica del MEL–spaced Filterbank. Attraverso dei metodi di _Python_ è possibile andare a creare direttamente i filtri per eseguire la funzionalità MFCC sul suono, inoltre è anche possibile separare le bande di frequenza.
-
-~~L'MFCC e la creazione dei banchi di filtri (Filter Banks) sono influenzati dal modo in cui gli esseri umani percepiscono il suono. Tuttavia, questa elaborazione richiede anche molti calcoli matematici che stanno dietro l’implementazione. _Python_ ci fornisce direttamente i metodi per creare i filtri e per eseguire la funzionalità MFCC sul suono, ma vogliamo anche dare uno sguardo alla matematica dietro queste operazioni. I tre modelli matematici discreti che entrano in questa elaborazione sono il Discrete Cosine Transform (DCT), che viene utilizzato per la scorrelazione dei coefficienti del banco dei filtri, definito anche come “imbiancamento” del suono, e le Gaussian Mixture Models – Hidden Markov Models (GMMs–HMMs), uno standard per gli algoritmi di Automatic Speech Recognition (ASR). Grazie al fatto che al giorno d'oggi i costi computazionali sono diminuiti grazie al Cloud Computing, per queste tecniche vengono utilizzati sistemi vocali di deep learning che sono meno suscettibili al rumore. Inoltre, bisogna notare che DCT è un algoritmo di trasformazione lineare e che quindi potrebbe escludere molti segnali utili, essendo il suono altamente non lineare.~~
+Per calcolare la potenza di una banda di frequenza attraverso la DFT, il **primo passo** è **distinguere** le diverse **bande** di **feature** disponibili (ottenibili da MFCC). Una volta effettuate queste suddivisioni, vengono utilizzati i **banchi di filtri per partizionare le frequenze**. I banchi di filtri possono essere creati utilizzando qualsiasi frequenza specificata per le partizioni. L’intervallo tra i filtri all'interno di un banco cresce esponenzialmente all'aumentare della frequenza, per fare questo procedimento è possibile utilizzare la tecnica del _MEL–spaced Filterbank_.
+Attraverso dei metodi di _Python_ è possibile andare a creare direttamente i filtri per eseguire la funzionalità MFCC sul suono, inoltre è anche possibile separare le bande di frequenza.
 
 ``` python
 # MFCC
@@ -435,12 +433,56 @@ Individual Feature Length = 26
 ***
 
 ### Trasformata di _Fourier_
+La trasformata di _Fourier_ (**FT**) è uno strumento molto potente implementato, oggi, in un enorme numero di tecnologie. Il suo primo esempio di applicazione fu il campionamento e la digitalizzazione di segnali analogici. Nel tempo l’utilizzo della FT è stato ampliato a più orizzonti in ambito digitale, per esempio in ambito medico per effettuare risonanze magnetiche nucleari (TAC). Nonostante gli utilizzi della FT siano molto diversificati, il suo basilare funzionamento non è mai cambiato: essa non fa altro che modificare il **dominio** di una funzione del **tempo** (un segnale) in un **dominio** delle **frequenze**, permettendo così lo studio della composizione in termini di **frequenza**, **ampiezza** e **fase** del segnale stesso.
+
+La trasformata di _Fourier_ permette di scomporre una funzione non periodica in una combinazione lineare di funzioni con base _e<sup>jωt</sup>_.  
+Il segnale viene scomposto in un integrale, detto **integrale di _Fourier_** che può essere scritto in forma esponenziale, dove i coefficienti della combinazione lineare sono i dati della funzione continua F(ω) che rappresenta lo spettro della funzione f(t). in particolare:
+<center>
+  <img src="../repository/images/formula_trasformata_Fourier.png" alt="Formula Trasformata Fourier">
+</center>
+
+- _F(ω)_ è la trasformata di _Fourier_ della funzione _F(t)_ rispetto alla frequenza _ω_
+- _j_ è l’unità immaginaria (ricorda: _j<sup>2</sup> = -1_)
+- _ω_ è la frequenza angolare
+- _t_ è il tempo
+
+La trasformata di Fourier restituisce una rappresentazione della funzione _F(t)_ in termini di **sinusoidi** e **cosinusoidi** con **diverse frequenze**.
+
+Nel nostro caso, la trasformata di _Fourier_ ci è stata utile per sviluppare l’algoritmo della _speech recognition_, in quanto essa è una tecnica fondamentale in questo ambito, poiché consente di analizzare e rappresentare i segnali audio in termini delle loro componenti di frequenza.  
+Nel nostro studio abbiamo sfruttato la sua utilità nel contesto del riconoscimento vocale per:
+
+- **Analisi delle Frequenze Vocali**: la trasformata di _Fourier_ permette di scomporre un segnale vocale complesso nelle sue singole componenti di frequenza. Questo è utile perché il suono umano è una combinazione di diverse frequenze, e ogni suono ha caratteristiche spettrali uniche. L'analisi delle frequenze consente di _identificare_ i _tratti distintivi_ della voce che possono essere utilizzati per il riconoscimento
+
+- **Preprocessing dei Segnali Audio**: prima di applicare algoritmi di riconoscimento vocale, è spesso utile applicare la trasformata di _Fourier_ per evidenziare le caratteristiche spettrali più rilevanti del segnale. Questo può includere la _rimozione_ del _rumore di fondo_, l'accentuazione delle componenti vocali e altre operazioni di preprocessing.
+
+- **Estrazione delle Caratteristiche**: la trasformata di _Fourier_ è spesso utilizzata per estrarre caratteristiche discriminanti dai segnali audio. Ad esempio, potrebbe essere utilizzato uno _spettrogramma_, che rappresenta graficamente l'intensità delle frequenze nel tempo, per catturare le variazioni spettrali nel corso del tempo. Queste caratteristiche possono essere poi utilizzate come input per algoritmi di riconoscimento vocale.
+
+- **Riduzione Dimensionale**: in alcuni casi, il numero di frequenze estratte può essere molto grande, e ciò può portare a problemi di complessità computazionale. La trasformata di _Fourier_ può essere utilizzata anche per _ridurre_ la _dimensione_ dei _dati_, selezionando solo le _frequenze_ più _rilevanti_.
+
+- **Sintonizzazione dei Modelli Acustici**: nei sistemi di riconoscimento vocale basati su modelli acustici, la trasformata di _Fourier_ può essere utilizzata per _sintonizzare_ i _modelli_ alle _caratteristiche spettrali_ specifiche di un utente o di un ambiente particolare, migliorando così la precisione del riconoscimento.
+
+È importante però notare che esistono diverse varianti della trasformata di _Fourier_, come la trasformata di _Fourier_ discreta (DFT), spiegata in precedenza, utilizzata in ambito digitale e l'algoritmo veloce di _Fourier_ (FFT), che semplifica il calcolo della trasformata di _Fourier_ su un calcolatore.
 
 ***
 
 #### Quarto passo: riconoscimento delle parole parlate
+Per quanto riguarda il riconoscimento vocale, esistono diverse librerie disponibili per trasformare il parlato in testo, come _Bing Speech_, _Google Speech_, _Houndify_, _IBM Speech to Text_, ecc. In questo caso utilizzeremo la libreria _**Google Speech**_ per la conversione.  
+Tra le funzionalità principali dell'API di _Google Speech_ c’è l'**adattamento del discorso**. Questo significa che l'API è in grado di capire il dominio del discorso. Per intenderci, valute, indirizzi, anni, sono tutte parole presenti nella conversione da discorso a testo. Esistono classi specifiche del dominio definite nell'algoritmo che **riconoscono** queste **occorrenze** nel **discorso di input**. L'API funziona sia con file in locale, preregistrati, sia con registrazioni live sul microfono nell'attuale ambiente di lavoro.
+Nel nostro caso, analizzeremo il discorso dal vivo attraverso l'input del microfono.
 
+- **Classe `Microphone`**: un’istanza della classe `Microphone` può essere usata dal riconoscitore vocale per **registrare direttamente l'audio** all'interno della directory di lavoro.   
+Per verificare se ci sono **microfoni** disponibili nel sistema, si usa il metodo statico `list_microphone_names`. Per utilizzare uno qualsiasi dei microfoni disponibili elencati, si usa il metodo `device_index`.
 
+- **Catturare l’input del microfono**: la funzione `listen()` viene usata per catturare l’input prelevato dal microfono. Tutti i segnali sonori ricevuti dal microfono vengono memorizzati nella variabile che chiama `listen()`. Questa funzione registra finché non rileva un segnale di silenzio, cioè di ampiezza 0.   
+Riduzione del **rumore ambientale**: qualsiasi ambiente è incline alla presenza di rumore ambientale che potrebbe ostacolare la registrazione. Per questo esiste un metodo della classe `Recognizer`, `adjust_for_ambient_noise()`, che aiuta a rimuovere automaticamente il rumore ambientale dai suoni registrati.
+
+- **Riconoscimento del suono**: utilizzo di API per effettuare **correzioni semantiche** e **sintattiche**, **comprendere** il **dominio** del **suono** e il **linguaggio parlato**, e infine per produrre la **conversione** del discorso **in testo**.
+
+La seguente immagine mostra il flusso di lavoro dell'API di Google _Speech Recognition_ utilizzando la classe `Microphone`.   
+
+<center>
+  <img src="../repository/images/speech_recognition.png" alt="Speech Recognition">
+</center>
 
 ``` python
 # Importiamo la libreria per il riconoscimento vocale
@@ -514,3 +556,5 @@ Reach the Microphone and say something!
 Recording completed.
 I think you said: hello world
 ```
+
+***
