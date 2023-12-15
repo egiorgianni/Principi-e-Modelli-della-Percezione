@@ -82,9 +82,9 @@ Torso e spalle influenzano il suono che arriva al timpano, introducendo due cont
 - **Oscuramento**: man mano che la sorgente si muove verso il basso, le _riflessioni scompaiono_, dando spazio all'effetto di oscuramento. I raggi che vanno dall'orecchio ai punti di tangenza della parte superiore del torso delimitano il _cono di oscuramento_.  
 ![Modello Strutturale - Effetto di Oscuramento](images/modello_strutturale_oscuramenti.png)
 
+***
 
 ### Reti neurali
-***
 Le reti neurali sono fondamentali nel funzionamento del sistema uditivo. Il sistema uditivo del cervello è complesso e coinvolge una serie di reti neurali che lavorano insieme per **elaborare** le **informazioni uditive**, consentendoci di percepire e comprendere i suoni.
 Le reti neurali includono:
 1. **Corteccia uditiva**; è la parte principale del cervello coinvolta nella percezione uditiva. La corteccia uditiva è divisa in varie aree specializzate che gestiscono specifiche informazioni sui suoni, come la loro _frequenza_, _intensità_ e _localizzazione_. Le reti neurali presenti in questa zona rappresentano e interpretano i segnali uditivi
@@ -99,9 +99,9 @@ Le reti neurali sono coinvolte nell'elaborazione delle _informazioni uditive_ in
 
 In sintesi, le reti neurali svolgono un ruolo centrale nel sistema uditivo, contribuendo alla **percezione**, all'**elaborazione** e all'**interpretazione** dei **suoni** nell'ambiente circostante.
 
+***
 
 ### Riconoscimento vocale
-***
 Un generico sistema di _Speech Recognition_ è progettato per eseguire tre task:
 1. la **cattura** delle **parole** e delle **frasi** dette da un essere umano. Questo passaggio si concentra quindi solo sulla parte di workflow relativa all’**acquisizione** dei **dati**;
 
