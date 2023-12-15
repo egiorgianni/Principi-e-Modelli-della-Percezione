@@ -22,15 +22,14 @@ Approfondimento Principi e Modelli della Percezione a cura di _Edoardo Giorgiann
       - [Riconoscimento delle parole parlate](#quarto-passo-riconoscimento-delle-parole-parlate)
 6. [Trasformata di _Fourier_](#trasformata-di-fourier)
 
+***
 
 ### Introduzione
-***
 In questo trattato introdurremo le principali componenti del sistema uditivo umano, per poi giungere alla spiegazione dell'applicazione della trasformata di _Fourier_ per il riconoscimento vocale.
 
+***
 
 ### Apparato uditivo
-
-***
 Per rispondere razionalmente agli stimoli prodotti dall’ambiente circostante, l’uomo utilizza i **cinque sensi**. L'**udito** è uno di questi. L’organo che permette di percepire i suoni è l’**orecchio**, suddiviso in **esterno**, **medio** e **interno**.
 
 <p align="center">
@@ -60,9 +59,9 @@ Un gioco di leve tra gli ossicini che compongono la staffa, provoca il suo spost
 #### Orecchio interno
 Le componenti principali dell’orecchio interno, che permette di percepire il suono, sono **coclea** e **finestra ovale**. Il collegamento tra orecchio medio e interno avviene mediante il collegamento tra la staffa e l’interno della coclea.
 
+***
 
 ### Modello strutturale
-***
 Il modello strutturale permette di differenziare le componenti dell’essere umano che permettono di identificare i percorsi che le onde sonore percorrono per arrivare al timpano. 
 
 #### Testa
