@@ -132,7 +132,7 @@ $ pip install python_speech_features
 ```text
 $ pip install numpy matplotlib scipy python_speech_features
 ```
-Utilizzate per lo step tre (sia per MFCC che per Filter Bank) **[inserire link]**.
+Utilizzate per lo [step tre](#terzo-passo-estrazione-delle-feature-dal-discorso) (sia per MFCC che per Filter Bank).
 ```text
 $ pip install SpeechRecognition
 ```
