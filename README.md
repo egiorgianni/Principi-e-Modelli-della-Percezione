@@ -476,7 +476,7 @@ Riduzione del **rumore ambientale**: qualsiasi ambiente è incline alla presenza
 La seguente immagine mostra il flusso di lavoro dell'API di Google _Speech Recognition_ utilizzando la classe `Microphone`.   
 
 <p align="center">
-  <img src="/images/speech_recognition.png" alt="Speech Recognition">
+  <img src="/images/speech_recognition.jpg" alt="Speech Recognition">
 </p>
 
 ``` python
