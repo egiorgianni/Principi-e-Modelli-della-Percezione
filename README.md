@@ -125,7 +125,7 @@ Lo step iniziale di un algoritmo di _speech recognition_ è la creazione di un s
 ```text
 $ pip install numpy matplotlib scipy
 ```
-Utilizzata per lo step uno e due e per i segnali monotoni **[inserire link]**.
+Utilizzata per lo step [uno](#primo-passo-lettura-di-un-file-audio-e-generazione-di-un-grafico) e [due](#secondo-passo-trasfromazione-delle-frequenze-audio) e per i [segnali monotoni](#importanza-dei-segnali-audio-monotoni).
 ```text
 $ pip install python_speech_features
 ```
