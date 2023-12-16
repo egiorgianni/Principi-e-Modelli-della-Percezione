@@ -142,7 +142,7 @@ $ pip install pipwin
 ```text
 $ pip install pyaudio
 ```
-Utilizzate per lo step quattro **[inserire link]**.
+Utilizzate per lo [step quattro](#quarto-passo-riconoscimento-delle-parole-parlate).
 
 SciPy (`scipy.io`) dispone di vari metodi per effettuare operazioni coi file in _Python_ (nel nostro caso la usiamo per la lettura, step uno e due, o la scrittura, segnali monotoni, del file audio).   
 NumPy (`numpy`) è una libreria _Python_ per la computazione scientifica.   
