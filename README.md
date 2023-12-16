@@ -153,7 +153,7 @@ Lo scopo di questo step è visualizzare i segnali audio come **punti strutturati
 
 - **Registrazione**: una registrazione è il _file_ fornito in input all’algoritmo, il quale ne analizza il contenuto e costruisce un modello di _speech recognition_. Questo record può essere un file in memoria oppure può essere registrato live e _Python_ permette di lavorare con entrambi i casi (noi vedremo la lettura di un file in memoria locale).
 
-- **Campionamento**: tutti i segnali di una registrazione vengono salvati in forma digitale. I digit sono difficili da elaborare per un software, dal momento che le macchine lavorano con input numerici. Il campionamento è infatti la tecnica usata per _convertire i segnali digitali in segnali numerici discreti_. Il campionamento viene fatto a una certa frequenza e genera segnali numerici. La scelta dei livelli di frequenza dipende dalla percezione del suono, ad esempio si sceglie una frequenza elevata se percepiamo l’audio come continuo.
+- **Campionamento**: tutti i segnali di una registrazione vengono salvati in forma digitale. I _digit_ sono difficili da elaborare per un software, dal momento che le macchine lavorano con input numerici. Il campionamento è infatti la tecnica usata per _convertire i segnali digitali in segnali numerici discreti_. Il campionamento viene effettuato ad una certa frequenza e genera segnali numerici. La scelta dei livelli di frequenza dipende dalla percezione del suono, ad esempio si sceglie una frequenza elevata se percepiamo l’audio come continuo.
 
 ```python
 # Fonte dell’audio: 'fileAudio.wav'
